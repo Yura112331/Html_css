@@ -1,0 +1,124 @@
+.section-facts {
+  position: absolute;
+  background: black url("../image/bg_facts.png") no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position-y: -70px;
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 42px 80px 18px;
+}
+
+header h1 {
+  position: relative;
+  width: 100%;
+  margin: 0 25px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #feffd3;
+}
+
+header h1:before {
+  position: absolute;
+  content: "";
+  top: 21px;
+  left: 0;
+  opacity: 0.3;
+  width: calc((100% - 210px) / 2);
+  border: 2px solid #feffd3;
+}
+
+header h1:after {
+  position: absolute;
+  content: "";
+  top: 21px;
+  right: 0;
+  opacity: 0.3;
+  width: calc((100% - 210px) / 2);
+  border: 2px solid #feffd3;
+}
+
+/* end header */
+
+.body {
+  margin: 12px 80px 0;
+}
+
+.body .discription {
+  width: 429px;
+  text-align: center;
+  padding-left: 70px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 25px;
+  color: #b9bcc7;
+}
+
+.body .achivs-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0 40px;
+}
+
+.body .achivs-menu .achivs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 23px 15px;
+  width: 407px;
+  height: 196px;
+}
+
+.body .achivs-menu .achivs p {
+  font-size: 14px;
+  margin-top: 17px;
+  line-height: 17px;
+  text-align: center;
+  color: #b9bcc7;
+}
+
+.body .achivs-menu .button {
+  width: 188px;
+  height: 61px;
+  margin: auto;
+  border: none;
+  border-radius: 3px 30px 30px 3px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #feffd3;
+  background: #04162b;
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 54px 60px;
+}
+
+footer img{
+  width: 127px;
+  height: 38px;
+}
+
+footer:before {
+  position: absolute;
+  top: 18px;
+  left: 151px;
+  opacity: 0.3;
+  content: "";
+  width: calc(100% - 305px);
+  border: 2px solid #FEFFD3;
+}
+
+/* end footer */
