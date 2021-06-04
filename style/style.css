@@ -63,6 +63,7 @@ header h1:after {
 
 .body .achivs-menu {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 50px 0 40px;
 }
@@ -72,7 +73,7 @@ header h1:after {
   flex-direction: column;
   align-items: center;
   margin: 0 23px 15px;
-  width: 407px;
+  width: 361px;
   height: 196px;
 }
 
