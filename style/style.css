@@ -1,31 +1,166 @@
-.section-facts {
-  position: absolute;
-  background: black url("../image/bg_facts.png") no-repeat;
-  min-width: 100%;
-  min-height: 100%;
-  background-size: cover;
-  background-position-y: -70px;
+
+/* section general */
+body {
+  background-color: #04162b;
 }
 
-/* header */
+.section-general {
+  background-image: url("../image/1.jpg");
+  min-width: 1443px;
+  min-height: 794px;
+  background-size: 100%;
+  margin-top: 5px;
+}
 
-header {
+/* section general "header" */
+.section-general header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 80px 18px;
+}
+
+.section-general header .link {
+  position: absolute;
+  display: flex;
+  top: 63px;
+  left: 298px;
+}
+.section-general header .link li {
+  margin-right: 50px;
+}
+
+.section-general header .link li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.section-general header::before {
+  position: absolute;
+  top: 69px;
+  left: 696px;
+  opacity: 0.3;
+  content: "";
+  width: calc(100% - 903px);
+  border: 2px solid #feffd3;
+}
+/* section general "end header" */
+
+/* section general "body" */
+.section-general .body {
+  margin: 43px 90px 0;
+}
+
+.section-general .body::after {
+  content: "";
+  position: absolute;
+  top: 125px;
+  right: 80px;
+  opacity: 0.3;
+  height: calc(100% - 208px);
+  border: 2px solid #feffd3;
+}
+
+.section-general .body .text {
+  font-size: 18px;
+  color: #feffd3;
+}
+
+.section-general .body .text-name {
+  margin-top: 13px;
+  width: 640px;
+  height: 170px;
+  font-size: 72px;
+  line-height: 84px;
+  color: #feffd3;
+}
+
+.section-general .body .text-outline {
+  margin-top: 53px;
+  width: 395px;
+  height: 74px;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #b9bcc7;
+}
+
+.section-general .body .button-left {
+  margin-top: 44px;
+  background: transparent;
+  border: none;
+  width: 188px;
+  height: 61px;
+  font-size: 16px;
+  color: #feffd3;
+}
+
+.section-general .body .button-right {
+  margin: 44px 31px 0;
+  height: 61px;
+  width: 188px;
+  background: #04162b;
+  border: none;
+  border-radius: 3px 30px 30px 3px;
+  font-size: 16px;
+  color: #feffd3;
+}
+/* section general "end body" */
+
+/* section general "footer" */
+.section-general footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 80px auto;
+}
+
+.section-general footer::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 100px;
+  width: calc(100% - 246px);
+  opacity: 0.3;
+  border: 2px solid #feffd3;
+}
+
+.section-general footer p {
+  margin-top: 3px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #feffd3;
+}
+/* section general "end footer" */
+
+/* section facts */
+.section-facts {
+  background: black url("../image/bg_facts.png") no-repeat;
+  min-width: 1443px;
+  min-height: 794px;
+  background-size: 100% calc(100% + 94px);
+  background-position-y: -59px;
+  margin-top: 5px;
+}
+
+/* section facts "header" */
+.section-facts header {
   display: flex;
   align-items: center;
   padding: 42px 80px 18px;
 }
 
-header h1 {
+.section-facts header h1 {
   position: relative;
   width: 100%;
   margin: 0 25px;
   font-size: 36px;
-  line-height: 42px;
   text-align: center;
   color: #feffd3;
 }
 
-header h1:before {
+.section-facts header h1:before {
   position: absolute;
   content: "";
   top: 21px;
@@ -35,7 +170,7 @@ header h1:before {
   border: 2px solid #feffd3;
 }
 
-header h1:after {
+.section-facts header h1:after {
   position: absolute;
   content: "";
   top: 21px;
@@ -44,14 +179,14 @@ header h1:after {
   width: calc((100% - 210px) / 2);
   border: 2px solid #feffd3;
 }
+/* section facts "end header" */
 
-/* end header */
-
-.body {
+/* section facts "body" */
+.section-facts .body {
   margin: 12px 80px 0;
 }
 
-.body .discription {
+.section-facts .body .discription {
   width: 429px;
   text-align: center;
   padding-left: 70px;
@@ -61,14 +196,14 @@ header h1:after {
   color: #b9bcc7;
 }
 
-.body .achivs-menu {
+.section-facts .body .achivs-menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 50px 0 40px;
 }
 
-.body .achivs-menu .achivs {
+.section-facts .body .achivs-menu .achivs {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,7 +212,7 @@ header h1:after {
   height: 196px;
 }
 
-.body .achivs-menu .achivs p {
+.section-facts .body .achivs-menu .achivs p {
   font-size: 14px;
   margin-top: 17px;
   line-height: 17px;
@@ -85,7 +220,7 @@ header h1:after {
   color: #b9bcc7;
 }
 
-.body .achivs-menu .button {
+.section-facts .body .achivs-menu .button {
   width: 188px;
   height: 61px;
   margin: auto;
@@ -96,30 +231,176 @@ header h1:after {
   color: #feffd3;
   background: #04162b;
 }
+/* section facts "end body" */
 
-/* footer */
-
-footer {
+/* section facts "footer" */
+.section-facts footer {
   position: relative;
-  bottom: 0;
   display: flex;
   justify-content: space-between;
   margin: 54px 60px;
 }
 
-footer img{
+.section-facts footer img {
   width: 127px;
   height: 38px;
 }
 
-footer:before {
+.section-facts footer:before {
   position: absolute;
   top: 18px;
   left: 151px;
   opacity: 0.3;
   content: "";
   width: calc(100% - 305px);
-  border: 2px solid #FEFFD3;
+  border: 2px solid #feffd3;
+}
+/* section facts "end footer" */
+
+/* section episodes */
+.section-episodes {
+  background: url("../image/bg_episodes.png");
+  min-width: 1443px;
+  min-height: 794px;
+  background-size: 100%;
+  margin-top: 5px;
 }
 
-/* end footer */
+/* section episodes "header" */
+.section-episodes header {
+  display: flex;
+  align-items: center;
+  padding: 42px 80px 18px;
+}
+
+.section-episodes header h1 {
+  position: relative;
+  width: 100%;
+  margin: 0 25px;
+  font-size: 36px;
+  text-align: center;
+  color: #feffd3;
+}
+
+.section-episodes header h1::before {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: 0;
+  width: calc((100% - 210px) / 2);
+  opacity: 0.3;
+  border: 2px solid #feffd3;
+}
+
+.section-episodes header h1::after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  right: 0;
+  width: calc((100% - 210px) / 2);
+  opacity: 0.3;
+  border: 2px solid #feffd3;
+}
+/* section episodes "end header" */
+
+/* section general "body" */
+.section-episodes .body {
+  margin: 67px 80px 0;
+}
+
+.section-episodes .body .discription {
+  width: 419px;
+  height: 62px;
+  font-size: 16px;
+  line-height: 25px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #b9bcc7;
+}
+
+.section-episodes .body .block-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.section-episodes .body .block-content {
+  position: relative;
+  margin-left: -35px;
+  width: 455px;
+  height: 323px;
+}
+
+.section-episodes .body .block-content .block-text {
+  position: absolute;
+  top: 134px;
+  right: 0;
+  width: 305px;
+  height: 106px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #b9bcc7;
+}
+
+.section-episodes .body .block-content .part {
+  position: absolute;
+  left: 35px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #feffd3;
+}
+
+.section-episodes .body .block-content .button {
+  display: flex;
+  flex-direction: row;
+  margin: 37px 0 0 37px;
+}
+
+.section-episodes .body .block-content .button .button-left {
+  width: 188px;
+  height: 60px;
+  font-size: 14px;
+  color: #b9bcc7;
+  background: transparent;
+  border: none;
+}
+
+.section-episodes .body .block-content .button .button-right {
+  height: 61px;
+  width: 188px;
+  margin-left: 31px;
+  background: #04162b;
+  border-radius: 3px 30px 30px 3px;
+  border: none;
+  font-size: 16px;
+  color: #feffd3;
+}
+/* section general "end body" */
+
+/* section general "footer" */
+.section-episodes footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 76px 60px;
+}
+
+.section-episodes footer .mask {
+  width: 127px;
+  height: 38px;
+  margin-top: 5px;
+}
+
+.section-episodes footer::before {
+  position: absolute;
+  content: "";
+  top: 22px;
+  left: 151px;
+  opacity: 0.3;
+  width: calc(100% - 240px);
+  border: 2px solid #feffd3;
+}
+/* section general "end footer" */
