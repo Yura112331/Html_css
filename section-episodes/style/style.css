@@ -1,0 +1,147 @@
+/* section episodes */
+.section-episodes {
+  background: url("../image/bg_episodes.png");
+  min-width: 1443px;
+  min-height: 794px;
+  background-size: 100%;
+  margin-top: 5px;
+}
+
+/* section episodes "header" */
+.section-episodes header {
+  display: flex;
+  align-items: center;
+  padding: 42px 80px 18px;
+}
+
+.section-episodes header h1 {
+  position: relative;
+  width: 100%;
+  margin: 0 25px;
+  font-size: 36px;
+  text-align: center;
+  color: #feffd3;
+}
+
+.section-episodes header h1::before {
+  position: absolute;
+  content: "";
+  top: 16px;
+  left: 0;
+  width: calc((100% - 210px) / 2);
+  opacity: 0.3;
+  border: 2px solid #feffd3;
+}
+
+.section-episodes header h1::after {
+  position: absolute;
+  content: "";
+  top: 16px;
+  right: 0;
+  width: calc((100% - 210px) / 2);
+  opacity: 0.3;
+  border: 2px solid #feffd3;
+}
+/* section episodes "end header" */
+
+/* section general "body" */
+.section-episodes .body {
+  margin: 67px 80px 0;
+}
+
+.section-episodes .body .discription {
+  width: 419px;
+  height: 62px;
+  font-size: 16px;
+  line-height: 25px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #b9bcc7;
+}
+
+.section-episodes .body .block-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.section-episodes .body .block-content {
+  position: relative;
+  margin-left: -35px;
+  width: 455px;
+  height: 323px;
+}
+
+.section-episodes .body .block-content .block-text {
+  position: absolute;
+  top: 134px;
+  right: 0;
+  width: 305px;
+  height: 106px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #b9bcc7;
+}
+
+.section-episodes .body .block-content .part {
+  position: absolute;
+  left: 35px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #feffd3;
+}
+
+.section-episodes .body .block-content .button {
+  display: flex;
+  flex-direction: row;
+  margin: 37px 0 0 37px;
+}
+
+.section-episodes .body .block-content .button .button-left {
+  width: 188px;
+  height: 60px;
+  font-size: 14px;
+  color: #b9bcc7;
+  background: transparent;
+  border: none;
+}
+
+.section-episodes .body .block-content .button .button-right {
+  height: 61px;
+  width: 188px;
+  margin-left: 31px;
+  background: #04162b;
+  border-radius: 3px 30px 30px 3px;
+  border: none;
+  font-size: 16px;
+  color: #feffd3;
+}
+/* section general "end body" */
+
+/* section general "footer" */
+.section-episodes footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 76px 60px;
+}
+
+.section-episodes footer .mask {
+  width: 127px;
+  height: 38px;
+  margin-top: 5px;
+}
+
+.section-episodes footer::before {
+  position: absolute;
+  content: "";
+  top: 22px;
+  left: 151px;
+  opacity: 0.3;
+  width: calc(100% - 240px);
+  border: 2px solid #feffd3;
+}
+/* section general "end footer" */
