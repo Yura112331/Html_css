@@ -1,10 +1,9 @@
 /* section episodes */
 .section-characters {
-  background: url("../image/bg_characters.png");
-  min-width: 1440px;
-  min-height: 2001px;
-  background-size: 100%;
-  margin-top: 5px;
+  background: url("../image/bg_characters.png") no-repeat;
+  max-width: 1440px;
+  max-height: 2001px;
+  background-size: cover;
 }
 
 /* section episodes "header" */
@@ -56,13 +55,15 @@
 }
 
 .section-characters .body .content .block-text {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 843px;
+  width: 800px;
 }
 
 .section-characters .body .content .block-img {
+  z-index: 0;
   width: 516px;
 }
 

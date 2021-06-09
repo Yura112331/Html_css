@@ -1,10 +1,9 @@
 /* section episodes */
 .section-episodes {
-  background: url("../image/bg_episodes.png");
-  min-width: 1443px;
-  min-height: 794px;
-  background-size: 100%;
-  margin-top: 5px;
+  background: black url("../image/bg_episodes.png") no-repeat;
+  max-width: 1443px;
+  max-height: 794px;
+  background-size: cover;
 }
 
 /* section episodes "header" */
@@ -47,6 +46,7 @@
 /* section general "body" */
 .section-episodes .body {
   margin: 67px 80px 0;
+  max-width: 1240px;
 }
 
 .section-episodes .body .discription {
@@ -62,6 +62,7 @@
 .section-episodes .body .block-flex {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 25px;
 }
@@ -69,7 +70,7 @@
 .section-episodes .body .block-content {
   position: relative;
   margin-left: -35px;
-  width: 455px;
+  max-width: 455px;
   height: 323px;
 }
 

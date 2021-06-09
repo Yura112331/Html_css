@@ -1,11 +1,10 @@
 /* section facts */
 .section-facts {
   background: black url("../image/bg_facts.png") no-repeat;
-  min-width: 1443px;
-  min-height: 794px;
+  max-width: 1443px;
+  max-height: 794px;
   background-size: 100% calc(100% + 94px);
   background-position-y: -59px;
-  margin-top: 5px;
 }
 
 /* section facts "header" */

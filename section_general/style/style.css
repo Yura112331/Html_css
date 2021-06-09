@@ -1,14 +1,9 @@
 /* section general */
-body {
-  background-color: #04162b;
-}
-
 .section-general {
-  background-image: url("../image/1.jpg");
-  min-width: 1443px;
-  min-height: 794px;
-  background-size: 100%;
-  margin-top: 5px;
+  background: black url("../image/1.jpg") no-repeat;
+  max-width: 1443px;
+  max-height: 794px;
+  background-size: cover;
 }
 
 /* section general "header" */
