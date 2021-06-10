@@ -1,0 +1,125 @@
+$line-color: #feffd3;
+
+.section-general {
+  background: black url("../image/1.jpg") no-repeat;
+  max-width: 1443px;
+  max-height: 794px;
+  background-size: cover;
+
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 80px 18px;
+
+    .link {
+      position: absolute;
+      display: flex;
+      top: 63px;
+      left: 298px;
+
+      li {
+        margin-right: 50px;
+
+        a {
+          font-size: 16px;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 69px;
+      left: 696px;
+      opacity: 0.3;
+      content: "";
+      width: calc(100% - 903px);
+      border: 2px solid $line-color;
+    }
+  }
+
+  .body {
+    margin: 43px 90px 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 125px;
+      right: 80px;
+      opacity: 0.3;
+      height: calc(100% - 208px);
+      border: 2px solid $line-color;
+    }
+
+    .text {
+      font-size: 18px;
+      color: $line-color;
+    }
+
+    .text-name {
+      margin-top: 13px;
+      width: 640px;
+      height: 170px;
+      font-size: 72px;
+      line-height: 84px;
+      color: $line-color;
+    }
+
+    .text-outline {
+      margin-top: 53px;
+      width: 395px;
+      height: 74px;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: 0.02em;
+      color: #b9bcc7;
+    }
+
+    .button-left {
+      margin-top: 44px;
+      background: transparent;
+      border: none;
+      width: 188px;
+      height: 61px;
+      font-size: 16px;
+      color: $line-color;
+    }
+
+    .button-right {
+      margin: 44px 31px 0;
+      height: 61px;
+      width: 188px;
+      background: #04162b;
+      border: none;
+      border-radius: 3px 30px 30px 3px;
+      font-size: 16px;
+      color: $line-color;
+    }
+  }
+
+  footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 80px auto;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 100px;
+      width: calc(100% - 246px);
+      opacity: 0.3;
+      border: 2px solid $line-color;
+    }
+
+    p {
+      margin-top: 3px;
+      font-size: 14px;
+      line-height: 26px;
+      color: $line-color;
+    }
+  }
+}

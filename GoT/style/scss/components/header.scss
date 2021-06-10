@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 42px 80px 18px;
+  
+    h1 {
+        position: relative;
+        width: 100%;
+        margin: 0 25px;
+        font-size: 36px;
+        text-align: center;
+        color: #feffd3;
+      
+        @mixin header-lines () {
+            position: absolute;
+            content: "";
+            top: 21px;
+            opacity: 0.3;
+            width: calc((100% - 210px) / 2);
+            border: 2px solid #feffd3;
+        }
+
+        &:before {
+            @include header-lines();
+            left: 0;
+        }
+    
+        &:after {
+            @include header-lines();
+            right: 0;
+        }
+    }
+}

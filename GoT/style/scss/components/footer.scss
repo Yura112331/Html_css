@@ -1,0 +1,21 @@
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 54px 60px;
+
+    img {
+      width: 127px;
+      height: 38px;
+    }
+
+    &:before {
+      position: absolute;
+      top: 18px;
+      left: 151px;
+      opacity: 0.3;
+      content: "";
+      width: calc(100% - 305px);
+      border: 2px solid #feffd3;
+    }
+  }
