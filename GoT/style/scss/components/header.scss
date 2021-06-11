@@ -1,9 +1,14 @@
 @import "../helpers/variables.scss";
+@import "../helpers/mixins.scss";
 
 header {
     display: flex;
     align-items: center;
     padding: 42px 80px 18px;
+
+    .logo {
+        cursor: pointer;
+    }
   
     h1 {
         position: relative;
@@ -13,22 +18,17 @@ header {
         text-align: center;
         color: $line-color;
       
-        @mixin header-lines () {
-            position: absolute;
-            content: "";
-            top: 21px;
-            opacity: 0.3;
-            width: calc((100% - 210px) / 2);
-            border: 2px solid $line-color;
-        }
-
         &:before {
-            @include header-lines();
+            @include line;
+            top: 21px;
+            width: calc((100% - 210px) / 2);
             left: 0;
         }
     
         &:after {
-            @include header-lines();
+            @include line;
+            top: 21px;
+            width: calc((100% - 210px) / 2);
             right: 0;
         }
     }

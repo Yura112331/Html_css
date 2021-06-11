@@ -1,9 +1,9 @@
 @import "helpers/variables.scss";
+@import "helpers/mixins.scss";
 
 .section-episodes {
   background: black url("../../image/bg_episodes.png") no-repeat;
-  max-width: 1443px;
-  min-height: 794px;
+  @include picture-resolution;
   background-size: cover;
 
   @import "components/header.scss";
@@ -62,22 +62,16 @@
         margin: 37px 0 0 37px;
 
         .button-left {
-          width: 188px;
-          height: 60px;
-          font-size: 14px;
+          @include button;
           color: $color-text;
           background: transparent;
-          border: none;
         }
 
         .button-right {
-          height: 61px;
-          width: 188px;
+          @include button;
           margin-left: 31px;
           background: #04162b;
           border-radius: 3px 30px 30px 3px;
-          border: none;
-          font-size: 16px;
           color: $line-color;
         }
       }

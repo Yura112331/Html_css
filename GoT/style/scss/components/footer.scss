@@ -1,4 +1,5 @@
 @import "../helpers/variables.scss";
+@import "../helpers/mixins.scss";
 
 footer {
     position: relative;
@@ -12,12 +13,9 @@ footer {
     }
 
     &:before {
-      position: absolute;
+      @include line;
       top: 18px;
       left: 151px;
-      opacity: 0.3;
-      content: "";
       width: calc(100% - 305px);
-      border: 2px solid $line-color;
     }
   }

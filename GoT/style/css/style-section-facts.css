@@ -10,6 +10,9 @@
   align-items: center;
   padding: 42px 80px 18px;
 }
+.section-facts header .logo {
+  cursor: pointer;
+}
 .section-facts header h1 {
   position: relative;
   width: 100%;
@@ -19,21 +22,21 @@
   color: #feffd3;
 }
 .section-facts header h1:before {
-  position: absolute;
   content: "";
-  top: 21px;
+  position: absolute;
   opacity: 0.3;
-  width: calc((100% - 210px) / 2);
   border: 2px solid #feffd3;
+  top: 21px;
+  width: calc((100% - 210px) / 2);
   left: 0;
 }
 .section-facts header h1:after {
-  position: absolute;
   content: "";
-  top: 21px;
+  position: absolute;
   opacity: 0.3;
-  width: calc((100% - 210px) / 2);
   border: 2px solid #feffd3;
+  top: 21px;
+  width: calc((100% - 210px) / 2);
   right: 0;
 }
 .section-facts .body {
@@ -73,10 +76,10 @@
 .section-facts .body .achivs-menu .button {
   width: 188px;
   height: 61px;
-  margin: auto;
-  border: none;
-  border-radius: 3px 30px 30px 3px;
   font-size: 16px;
+  border: none;
+  margin: auto;
+  border-radius: 3px 30px 30px 3px;
   line-height: 25px;
   color: #feffd3;
   background: #04162b;
@@ -92,13 +95,13 @@
   height: 38px;
 }
 .section-facts footer:before {
+  content: "";
   position: absolute;
+  opacity: 0.3;
+  border: 2px solid #feffd3;
   top: 18px;
   left: 151px;
-  opacity: 0.3;
-  content: "";
   width: calc(100% - 305px);
-  border: 2px solid #feffd3;
 }
 
 /*# sourceMappingURL=style-section-facts.css.map */

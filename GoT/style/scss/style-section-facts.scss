@@ -1,9 +1,9 @@
 @import "helpers/variables.scss";
+@import "helpers/mixins.scss";
 
 .section-facts {
   background: black url("../../image/bg_facts.png") no-repeat;
-  max-width: 1443px;
-  min-height: 794px;
+  @include picture-resolution;
   background-size: 100% calc(100% + 94px);
   background-position-y: -59px;
 
@@ -45,14 +45,11 @@
           color: $color-text;
         }
       }
-    
+
       .button {
-        width: 188px;
-        height: 61px;
+        @include button;
         margin: auto;
-        border: none;
         border-radius: 3px 30px 30px 3px;
-        font-size: 16px;
         line-height: 25px;
         color: $line-color;
         background: #04162b;
