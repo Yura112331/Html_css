@@ -1,3 +1,5 @@
+@import "../helpers/variables.scss";
+
 header {
     display: flex;
     align-items: center;
@@ -9,7 +11,7 @@ header {
         margin: 0 25px;
         font-size: 36px;
         text-align: center;
-        color: #feffd3;
+        color: $line-color;
       
         @mixin header-lines () {
             position: absolute;
@@ -17,7 +19,7 @@ header {
             top: 21px;
             opacity: 0.3;
             width: calc((100% - 210px) / 2);
-            border: 2px solid #feffd3;
+            border: 2px solid $line-color;
         }
 
         &:before {

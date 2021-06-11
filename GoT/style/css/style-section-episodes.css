@@ -1,0 +1,125 @@
+.section-episodes {
+  background: black url("../../image/bg_episodes.png") no-repeat;
+  max-width: 1443px;
+  min-height: 794px;
+  background-size: cover;
+}
+.section-episodes header {
+  display: flex;
+  align-items: center;
+  padding: 42px 80px 18px;
+}
+.section-episodes header h1 {
+  position: relative;
+  width: 100%;
+  margin: 0 25px;
+  font-size: 36px;
+  text-align: center;
+  color: #feffd3;
+}
+.section-episodes header h1:before {
+  position: absolute;
+  content: "";
+  top: 21px;
+  opacity: 0.3;
+  width: calc((100% - 210px) / 2);
+  border: 2px solid #feffd3;
+  left: 0;
+}
+.section-episodes header h1:after {
+  position: absolute;
+  content: "";
+  top: 21px;
+  opacity: 0.3;
+  width: calc((100% - 210px) / 2);
+  border: 2px solid #feffd3;
+  right: 0;
+}
+.section-episodes .body {
+  margin: 67px 80px 100px;
+  min-width: 1240px;
+}
+.section-episodes .body .discription {
+  width: 419px;
+  height: 62px;
+  font-size: 16px;
+  line-height: 25px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #b9bcc7;
+}
+.section-episodes .body .block-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.section-episodes .body .block-content {
+  position: relative;
+  margin-left: -35px;
+  max-width: 455px;
+  height: 323px;
+}
+.section-episodes .body .block-content .block-text {
+  position: absolute;
+  top: 134px;
+  right: 0;
+  width: 305px;
+  height: 106px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #b9bcc7;
+}
+.section-episodes .body .block-content .part {
+  position: absolute;
+  left: 35px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #feffd3;
+}
+.section-episodes .body .block-content .button {
+  display: flex;
+  flex-direction: row;
+  margin: 37px 0 0 37px;
+}
+.section-episodes .body .block-content .button .button-left {
+  width: 188px;
+  height: 60px;
+  font-size: 14px;
+  color: #b9bcc7;
+  background: transparent;
+  border: none;
+}
+.section-episodes .body .block-content .button .button-right {
+  height: 61px;
+  width: 188px;
+  margin-left: 31px;
+  background: #04162b;
+  border-radius: 3px 30px 30px 3px;
+  border: none;
+  font-size: 16px;
+  color: #feffd3;
+}
+.section-episodes footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 54px 60px;
+}
+.section-episodes footer img {
+  width: 127px;
+  height: 38px;
+}
+.section-episodes footer:before {
+  position: absolute;
+  top: 18px;
+  left: 151px;
+  opacity: 0.3;
+  content: "";
+  width: calc(100% - 305px);
+  border: 2px solid #feffd3;
+}
+
+/*# sourceMappingURL=style-section-episodes.css.map */

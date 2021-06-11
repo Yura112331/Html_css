@@ -1,9 +1,9 @@
-$line-color: #feffd3;
+@import "helpers/variables.scss";
 
 .section-general {
-  background: black url("../image/1.jpg") no-repeat;
+  background: black url("../../image/1.jpg") no-repeat;
   max-width: 1443px;
-  max-height: 794px;
+  min-height: 794px;
   background-size: cover;
 
   header {
@@ -74,7 +74,7 @@ $line-color: #feffd3;
       font-size: 16px;
       line-height: 25px;
       letter-spacing: 0.02em;
-      color: #b9bcc7;
+      color: $color-text;
     }
 
     .button-left {
