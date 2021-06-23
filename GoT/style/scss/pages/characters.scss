@@ -1,16 +1,16 @@
-@import "helpers/variables.scss";
+@import "../helpers/variables.scss";
 
 .section-characters {
-  background: url("../../image/bg_characters.png") no-repeat;
+  background: url("../../image/characters/bg_characters.png") no-repeat;
   max-width: 1440px;
   min-height: 2001px;
   background-size: cover;
 
-  @import "components/header.scss";
+  @import "../components/header.scss";
 
   .body {
     margin: 67px 80px 0;
-    min-width: 1240px;
+    max-width: 1240px;
 
     .content {
       display: flex;

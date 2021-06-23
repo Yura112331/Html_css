@@ -1,16 +1,18 @@
-@import "helpers/variables.scss";
-@import "helpers/mixins.scss";
+@import "../helpers/variables.scss";
+@import "../helpers/mixins.scss";
 
-.section-episodes {
-  background: black url("../../image/bg_episodes.png") no-repeat;
-  @include picture-resolution;
-  background-size: cover;
+.section {
 
-  @import "components/header.scss";
+  &.episodes {
+    background: url("../../image/episodes/bg_episodes.png");
+    background-size: cover;
+  }
+
+  @import "../components/header.scss";
 
   .body {
     margin: 67px 80px 100px;
-    min-width: 1240px;
+    max-width: 1240px;
 
     .discription {
       width: 419px;
@@ -33,7 +35,7 @@
     .block-content {
       position: relative;
       margin-left: -35px;
-      max-width: 455px;
+      max-width: 430px;
       height: 323px;
 
       .block-text {
@@ -72,11 +74,10 @@
           margin-left: 31px;
           background: #04162b;
           border-radius: 3px 30px 30px 3px;
-          color: $line-color;
         }
       }
     }
   }
 
-  @import "components/footer.scss";
+  @import "../components/footer.scss";
 }

@@ -2,34 +2,75 @@
 @import "../helpers/mixins.scss";
 
 header {
-    display: flex;
-    align-items: center;
-    padding: 42px 80px 18px;
+  display: flex;
+  align-items: center;
+  height: 62px;
+  padding: 42px 80px 18px;
 
-    .logo {
-        cursor: pointer;
-    }
-  
-    h1 {
+  .logo {
+    width: 200px;
+    height: 56px;
+    cursor: pointer;
+  }
+
+  nav {
+    width: 100%;
+    padding-left: 32px;
+
+    ul {
+      position: relative;
+      display: flex;
+      padding-right: 32px;
+
+      &::after {
         position: relative;
+        top: 8px;
+        height: 0px;
         width: 100%;
-        margin: 0 25px;
-        font-size: 36px;
-        text-align: center;
-        color: $line-color;
-      
-        &:before {
-            @include line;
-            top: 21px;
-            width: calc((100% - 210px) / 2);
-            left: 0;
+        opacity: 0.3;
+        border: 2px solid $line-color;
+        content: "";
+      }
+
+      li {
+        margin-right: 50px;
+
+        a {
+          font-size: 16px;
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 21px;
+          text-decoration: none;
+          color: white;
         }
-    
-        &:after {
-            @include line;
-            top: 21px;
-            width: calc((100% - 210px) / 2);
-            right: 0;
-        }
+      }
     }
+  }
+
+  h1 {
+    position: relative;
+    width: 100%;
+    margin: 0 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: $line-color;
+
+    &:before {
+      @include line;
+      top: 21px;
+      width: calc((100% - 210px) / 2);
+      left: 0;
+    }
+
+    &:after {
+      @include line;
+      top: 21px;
+      width: calc((100% - 210px) / 2);
+      right: 0;
+    }
+  }
 }

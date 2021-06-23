@@ -2,20 +2,31 @@
 @import "../helpers/mixins.scss";
 
 footer {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin: 54px 60px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 54px 60px;
+  padding-bottom: 75px;
 
-    img {
-      width: 127px;
-      height: 38px;
-    }
-
-    &:before {
-      @include line;
-      top: 18px;
-      left: 151px;
-      width: calc(100% - 305px);
-    }
+  img {
+    width: 127px;
+    height: 38px;
   }
+
+  &:before {
+    @include line;
+    top: 18px;
+    left: 151px;
+    width: calc(100% - 305px);
+  }
+
+  p {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $line-color;
+  }
+}

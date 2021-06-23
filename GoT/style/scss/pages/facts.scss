@@ -1,17 +1,18 @@
-@import "helpers/variables.scss";
-@import "helpers/mixins.scss";
+@import "../helpers/variables.scss";
+@import "../helpers/mixins.scss";
 
-.section-facts {
-  background: black url("../../image/bg_facts.png") no-repeat;
-  @include picture-resolution;
-  background-size: 100% calc(100% + 94px);
-  background-position-y: -59px;
+.section {
+  &.facts {
+    background: url("../../image/facts/bg_facts.png");
+    background-size: 100% calc(100% + 94px);
+    background-position-y: -59px;
+  }
 
-  @import "components/header.scss";
+  @import "../components/header.scss";
 
   .body {
     margin: 12px 0 0;
-    min-width: 1240px;
+    max-width: 1240px;
 
     .discription {
       width: 429px;
@@ -57,5 +58,5 @@
     }
   }
 
-  @import "components/footer.scss";
+  @import "../components/footer.scss";
 }
