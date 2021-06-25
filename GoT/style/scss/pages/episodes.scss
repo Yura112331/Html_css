@@ -2,7 +2,6 @@
 @import "../helpers/mixins.scss";
 
 .section {
-
   &.episodes {
     background: url("../../image/episodes/bg_episodes.png");
     background-size: cover;
@@ -17,6 +16,9 @@
     .discription {
       width: 419px;
       height: 62px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
       font-size: 16px;
       line-height: 25px;
       align-items: center;
@@ -44,6 +46,9 @@
         right: 0;
         width: 305px;
         height: 106px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
         font-size: 14px;
         line-height: 22px;
         letter-spacing: 0.02em;
@@ -53,6 +58,9 @@
       .part {
         position: absolute;
         left: 35px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: bold;
         font-size: 18px;
         letter-spacing: 0.05em;
         color: $line-color;
@@ -65,7 +73,6 @@
 
         .button-left {
           @include button;
-          color: $color-text;
           background: transparent;
         }
 
@@ -75,6 +82,10 @@
           background: #04162b;
           border-radius: 3px 30px 30px 3px;
         }
+      }
+      
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
       }
     }
   }

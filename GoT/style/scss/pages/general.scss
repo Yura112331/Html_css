@@ -11,10 +11,7 @@
 
   .body-general {
     margin: 43px 90px 0;
-
-    @media (max-width: 768px) {
-      margin: 43px 90px 0;
-    }
+    max-width: 1240px;
 
     .line-body {
       &:after {
