@@ -300,6 +300,12 @@ table {
   width: calc((100% - 210px) / 2);
   right: 0;
 }
+@media (max-width: 768px) {
+  .section header {
+    background: black;
+    padding: 10px 20px 10px 10px;
+  }
+}
 .section .body {
   margin: 43px 90px 0;
 }
@@ -405,6 +411,20 @@ table {
   background-size: 100% calc(100% + 94px);
   background-position-y: -59px;
 }
+@media (max-width: 1024px) {
+  .section.facts {
+    background-position-y: -75px;
+    background-size: 100% 100%;
+  }
+}
+@media (max-width: 768px) {
+  .section.facts {
+    background-position-y: 0px;
+    background: url("../../image/1.jpg") no-repeat;
+    background-size: auto 100%;
+    background-position-x: 70%;
+  }
+}
 .section header {
   display: flex;
   align-items: center;
@@ -474,6 +494,12 @@ table {
   top: 21px;
   width: calc((100% - 210px) / 2);
   right: 0;
+}
+@media (max-width: 768px) {
+  .section header {
+    background: black;
+    padding: 10px 20px 10px 10px;
+  }
 }
 .section .body {
   margin: 12px 0 0;
@@ -628,6 +654,12 @@ table {
   top: 21px;
   width: calc((100% - 210px) / 2);
   right: 0;
+}
+@media (max-width: 768px) {
+  .section header {
+    background: black;
+    padding: 10px 20px 10px 10px;
+  }
 }
 .section .body {
   margin: 67px 80px 100px;
@@ -810,6 +842,12 @@ table {
   top: 21px;
   width: calc((100% - 210px) / 2);
   right: 0;
+}
+@media (max-width: 768px) {
+  .section-characters header {
+    background: black;
+    padding: 10px 20px 10px 10px;
+  }
 }
 .section-characters .body {
   margin: 67px 80px 0;
