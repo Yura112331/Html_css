@@ -241,14 +241,29 @@ table {
   height: 56px;
   cursor: pointer;
 }
+.section header .burger {
+  width: 79px;
+  height: 51px;
+  cursor: pointer;
+}
 .section header nav {
   width: 100%;
   padding-left: 32px;
+}
+@media (max-width: 768px) {
+  .section header nav {
+    padding: 10px;
+  }
 }
 .section header nav ul {
   position: relative;
   display: flex;
   padding-right: 32px;
+}
+@media (max-width: 768px) {
+  .section header nav ul {
+    padding-right: 10px;
+  }
 }
 .section header nav ul::after {
   position: relative;
@@ -261,6 +276,11 @@ table {
 }
 .section header nav ul li {
   margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .section header nav ul li {
+    margin-right: 10px;
+  }
 }
 .section header nav ul li a {
   font-size: 16px;
@@ -302,14 +322,18 @@ table {
 }
 @media (max-width: 768px) {
   .section header {
-    background: black;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 40px 10px 10px;
   }
 }
-.section .body {
+.section .body-general {
   margin: 43px 90px 0;
 }
-.section .body .line-body:after {
+@media (max-width: 768px) {
+  .section .body-general {
+    margin: 43px 90px 0;
+  }
+}
+.section .body-general .line-body:after {
   content: "";
   position: absolute;
   opacity: 0.3;
@@ -318,7 +342,12 @@ table {
   right: 80px;
   height: calc(100% - 255px);
 }
-.section .body .text {
+@media (max-width: 768px) {
+  .section .body-general .line-body:after {
+    right: 40px;
+  }
+}
+.section .body-general .text {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -326,7 +355,7 @@ table {
   line-height: 150.19%;
   color: #feffd3;
 }
-.section .body .text-name {
+.section .body-general .text-name {
   margin-top: 13px;
   width: 640px;
   height: 170px;
@@ -337,7 +366,7 @@ table {
   line-height: 84px;
   color: #feffd3;
 }
-.section .body .text-outline {
+.section .body-general .text-outline {
   margin-top: 53px;
   width: 395px;
   height: 74px;
@@ -349,7 +378,7 @@ table {
   letter-spacing: 0.02em;
   color: #b9bcc7;
 }
-.section .body .button-left {
+.section .body-general .button-left {
   margin-top: 44px;
   background: transparent;
   width: 188px;
@@ -362,7 +391,7 @@ table {
   border: none;
   color: #feffd3;
 }
-.section .body .button-right {
+.section .body-general .button-right {
   margin: 44px 31px 0;
   background: #04162b;
   border-radius: 3px 30px 30px 3px;
@@ -436,14 +465,29 @@ table {
   height: 56px;
   cursor: pointer;
 }
+.section header .burger {
+  width: 79px;
+  height: 51px;
+  cursor: pointer;
+}
 .section header nav {
   width: 100%;
   padding-left: 32px;
+}
+@media (max-width: 768px) {
+  .section header nav {
+    padding: 10px;
+  }
 }
 .section header nav ul {
   position: relative;
   display: flex;
   padding-right: 32px;
+}
+@media (max-width: 768px) {
+  .section header nav ul {
+    padding-right: 10px;
+  }
 }
 .section header nav ul::after {
   position: relative;
@@ -456,6 +500,11 @@ table {
 }
 .section header nav ul li {
   margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .section header nav ul li {
+    margin-right: 10px;
+  }
 }
 .section header nav ul li a {
   font-size: 16px;
@@ -497,15 +546,14 @@ table {
 }
 @media (max-width: 768px) {
   .section header {
-    background: black;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 40px 10px 10px;
   }
 }
-.section .body {
+.section .body-facts {
   margin: 12px 0 0;
   max-width: 1240px;
 }
-.section .body .discription {
+.section .body-facts .discription {
   width: 429px;
   text-align: center;
   padding-left: 70px;
@@ -514,13 +562,13 @@ table {
   line-height: 25px;
   color: #b9bcc7;
 }
-.section .body .achivs-menu {
+.section .body-facts .achivs-menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 50px 0 40px;
 }
-.section .body .achivs-menu .achivs {
+.section .body-facts .achivs-menu .achivs {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -528,14 +576,14 @@ table {
   width: 361px;
   height: 196px;
 }
-.section .body .achivs-menu .achivs p {
+.section .body-facts .achivs-menu .achivs p {
   font-size: 14px;
   margin-top: 17px;
   line-height: 17px;
   text-align: center;
   color: #b9bcc7;
 }
-.section .body .achivs-menu .button {
+.section .body-facts .achivs-menu .button {
   width: 188px;
   height: 61px;
   font-family: "Montserrat", sans-serif;
@@ -596,14 +644,29 @@ table {
   height: 56px;
   cursor: pointer;
 }
+.section header .burger {
+  width: 79px;
+  height: 51px;
+  cursor: pointer;
+}
 .section header nav {
   width: 100%;
   padding-left: 32px;
+}
+@media (max-width: 768px) {
+  .section header nav {
+    padding: 10px;
+  }
 }
 .section header nav ul {
   position: relative;
   display: flex;
   padding-right: 32px;
+}
+@media (max-width: 768px) {
+  .section header nav ul {
+    padding-right: 10px;
+  }
 }
 .section header nav ul::after {
   position: relative;
@@ -616,6 +679,11 @@ table {
 }
 .section header nav ul li {
   margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .section header nav ul li {
+    margin-right: 10px;
+  }
 }
 .section header nav ul li a {
   font-size: 16px;
@@ -657,15 +725,14 @@ table {
 }
 @media (max-width: 768px) {
   .section header {
-    background: black;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 40px 10px 10px;
   }
 }
-.section .body {
+.section .body-episodes {
   margin: 67px 80px 100px;
   max-width: 1240px;
 }
-.section .body .discription {
+.section .body-episodes .discription {
   width: 419px;
   height: 62px;
   font-size: 16px;
@@ -674,20 +741,20 @@ table {
   letter-spacing: 0.02em;
   color: #b9bcc7;
 }
-.section .body .block-flex {
+.section .body-episodes .block-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 25px;
 }
-.section .body .block-content {
+.section .body-episodes .block-content {
   position: relative;
   margin-left: -35px;
   max-width: 430px;
   height: 323px;
 }
-.section .body .block-content .block-text {
+.section .body-episodes .block-content .block-text {
   position: absolute;
   top: 134px;
   right: 0;
@@ -698,19 +765,19 @@ table {
   letter-spacing: 0.02em;
   color: #b9bcc7;
 }
-.section .body .block-content .part {
+.section .body-episodes .block-content .part {
   position: absolute;
   left: 35px;
   font-size: 18px;
   letter-spacing: 0.05em;
   color: #feffd3;
 }
-.section .body .block-content .button {
+.section .body-episodes .block-content .button {
   display: flex;
   flex-direction: row;
   margin: 37px 0 0 37px;
 }
-.section .body .block-content .button .button-left {
+.section .body-episodes .block-content .button .button-left {
   width: 188px;
   height: 61px;
   font-family: "Montserrat", sans-serif;
@@ -723,7 +790,7 @@ table {
   color: #b9bcc7;
   background: transparent;
 }
-.section .body .block-content .button .button-right {
+.section .body-episodes .block-content .button .button-right {
   width: 188px;
   height: 61px;
   font-family: "Montserrat", sans-serif;
@@ -784,14 +851,29 @@ table {
   height: 56px;
   cursor: pointer;
 }
+.section-characters header .burger {
+  width: 79px;
+  height: 51px;
+  cursor: pointer;
+}
 .section-characters header nav {
   width: 100%;
   padding-left: 32px;
+}
+@media (max-width: 768px) {
+  .section-characters header nav {
+    padding: 10px;
+  }
 }
 .section-characters header nav ul {
   position: relative;
   display: flex;
   padding-right: 32px;
+}
+@media (max-width: 768px) {
+  .section-characters header nav ul {
+    padding-right: 10px;
+  }
 }
 .section-characters header nav ul::after {
   position: relative;
@@ -804,6 +886,11 @@ table {
 }
 .section-characters header nav ul li {
   margin-right: 50px;
+}
+@media (max-width: 768px) {
+  .section-characters header nav ul li {
+    margin-right: 10px;
+  }
 }
 .section-characters header nav ul li a {
   font-size: 16px;
@@ -845,77 +932,76 @@ table {
 }
 @media (max-width: 768px) {
   .section-characters header {
-    background: black;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 40px 10px 10px;
   }
 }
-.section-characters .body {
+.section-characters .body-characters {
   margin: 67px 80px 0;
   max-width: 1240px;
 }
-.section-characters .body .content {
+.section-characters .body-characters .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.section-characters .body .content .block-img {
+.section-characters .body-characters .content .block-img {
   z-index: 0;
   width: 450px;
 }
-.section-characters .body .content .block-img img {
+.section-characters .body-characters .content .block-img img {
   width: 450px;
 }
-.section-characters .body .content .block-img .img2 {
+.section-characters .body-characters .content .block-img .img2 {
   margin-top: 125px;
 }
-.section-characters .body .content .block-img .img3 {
+.section-characters .body-characters .content .block-img .img3 {
   margin-top: 72px;
 }
-.section-characters .body .content .block-text {
+.section-characters .body-characters .content .block-text {
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 800px;
 }
-.section-characters .body .content .block-text h1 {
+.section-characters .body-characters .content .block-text h1 {
   font-size: 64px;
   letter-spacing: 0.05em;
   color: #b9bcc7;
   margin: 32px 0 60px 0;
 }
-.section-characters .body .content .block-text .text-content1 {
+.section-characters .body-characters .content .block-text .text-content1 {
   display: flex;
   flex-direction: row;
   justify-content: start;
 }
-.section-characters .body .content .block-text .text-content2 {
+.section-characters .body-characters .content .block-text .text-content2 {
   display: flex;
   flex-direction: column;
   justify-content: start;
   width: 843px;
 }
-.section-characters .body .content .block-text p {
+.section-characters .body-characters .content .block-text p {
   font-size: 14px;
   line-height: 22px;
   color: #b9bcc7;
 }
-.section-characters .body .content .block-text h3 {
+.section-characters .body-characters .content .block-text h3 {
   font-size: 24px;
   line-height: 37px;
   letter-spacing: 0.05em;
   color: #b9bcc7;
 }
-.section-characters .body .content .block-text .p1 {
+.section-characters .body-characters .content .block-text .p1 {
   width: 407px;
   height: 104px;
 }
-.section-characters .body .content .block-text .p2 {
+.section-characters .body-characters .content .block-text .p2 {
   width: 406px;
   height: 80px;
   margin: 10px 0 0 30px;
 }
-.section-characters .body .content .block-text .p3 {
+.section-characters .body-characters .content .block-text .p3 {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -923,10 +1009,10 @@ table {
   height: 243px;
   margin-top: 50px;
 }
-.section-characters .body .content .block-text .name-p {
+.section-characters .body-characters .content .block-text .name-p {
   margin-top: 53px;
 }
-.section-characters .body .content .block-text .p4 {
+.section-characters .body-characters .content .block-text .p4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -934,12 +1020,12 @@ table {
   height: 214px;
   margin-top: 27px;
 }
-.section-characters .body .content .block-text .name-p1 {
+.section-characters .body-characters .content .block-text .name-p1 {
   margin: 88px 0 30px 0;
 }
-.section-characters .body .content .block-text .p5,
-.section-characters .body .content .block-text .p6,
-.section-characters .body .content .block-text .p7 {
+.section-characters .body-characters .content .block-text .p5,
+.section-characters .body-characters .content .block-text .p6,
+.section-characters .body-characters .content .block-text .p7 {
   width: 735px;
   height: 165px;
 }

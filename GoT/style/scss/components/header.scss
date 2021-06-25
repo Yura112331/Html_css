@@ -13,14 +13,29 @@ header {
     cursor: pointer;
   }
 
+  .burger {
+    width: 79px;
+    height: 51px;
+    cursor: pointer;
+  }
+
   nav {
     width: 100%;
     padding-left: 32px;
+
+    @media (max-width: 768px) {
+      padding: 10px;
+    }
+
 
     ul {
       position: relative;
       display: flex;
       padding-right: 32px;
+
+      @media (max-width: 768px) {
+        padding-right: 10px;
+      }
 
       &::after {
         position: relative;
@@ -34,6 +49,10 @@ header {
 
       li {
         margin-right: 50px;
+
+        @media (max-width: 768px) {
+          margin-right: 10px;
+        }
 
         a {
           font-size: 16px;
@@ -75,7 +94,6 @@ header {
   }
 
   @media (max-width: 768px) {
-    background: black;
-    padding: 10px 20px 10px 10px;
+    padding: 10px 40px 10px 10px;
   }
 }

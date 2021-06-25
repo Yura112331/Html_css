@@ -9,8 +9,12 @@
 
   @import "../components/header.scss";
 
-  .body {
+  .body-general {
     margin: 43px 90px 0;
+
+    @media (max-width: 768px) {
+      margin: 43px 90px 0;
+    }
 
     .line-body {
       &:after {
@@ -18,6 +22,10 @@
         top: 125px;
         right: 80px;
         height: calc(100% - 255px);
+      
+        @media (max-width: 768px) {
+          right: 40px;
+        }
       }
     }
 
