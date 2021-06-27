@@ -293,6 +293,11 @@ table {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 950px) {
+  .section header nav ul li {
+    margin-right: 15px;
+  }
+}
 @media (max-width: 1024px) {
   .section header nav {
     padding: 10px;
@@ -346,13 +351,20 @@ table {
 @media (max-width: 520px) {
   .section header {
     background: #221a1a;
+    height: auto;
   }
   .section header h1:after, .section header h1:before {
     content: none;
   }
   .section header .logo {
+    order: 2;
     width: 120px;
     height: 70px;
+  }
+  .section header .burger {
+    order: 1;
+    width: 60px;
+    height: 40px;
   }
 }
 .section .body-general {
@@ -460,6 +472,11 @@ table {
     line-height: 56px;
   }
 }
+@media (max-width: 768px) {
+  .section .body-general {
+    margin: 20px 60px 0;
+  }
+}
 .section footer {
   position: relative;
   display: flex;
@@ -479,6 +496,12 @@ table {
   top: 18px;
   left: 151px;
   width: calc(100% - 305px);
+}
+@media (max-width: 768px) {
+  .section footer:before {
+    width: calc(100% - 256px);
+    left: 110px;
+  }
 }
 .section footer p {
   margin-top: 10px;
@@ -562,6 +585,11 @@ table {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 950px) {
+  .section header nav ul li {
+    margin-right: 15px;
+  }
+}
 @media (max-width: 1024px) {
   .section header nav {
     padding: 10px;
@@ -615,13 +643,20 @@ table {
 @media (max-width: 520px) {
   .section header {
     background: #221a1a;
+    height: auto;
   }
   .section header h1:after, .section header h1:before {
     content: none;
   }
   .section header .logo {
+    order: 2;
     width: 120px;
     height: 70px;
+  }
+  .section header .burger {
+    order: 1;
+    width: 60px;
+    height: 40px;
   }
 }
 .section .body-facts {
@@ -698,6 +733,12 @@ table {
   left: 151px;
   width: calc(100% - 305px);
 }
+@media (max-width: 768px) {
+  .section footer:before {
+    width: calc(100% - 256px);
+    left: 110px;
+  }
+}
 .section footer p {
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
@@ -773,6 +814,11 @@ table {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 950px) {
+  .section header nav ul li {
+    margin-right: 15px;
+  }
+}
 @media (max-width: 1024px) {
   .section header nav {
     padding: 10px;
@@ -826,13 +872,20 @@ table {
 @media (max-width: 520px) {
   .section header {
     background: #221a1a;
+    height: auto;
   }
   .section header h1:after, .section header h1:before {
     content: none;
   }
   .section header .logo {
+    order: 2;
     width: 120px;
     height: 70px;
+  }
+  .section header .burger {
+    order: 1;
+    width: 60px;
+    height: 40px;
   }
 }
 .section .body-episodes {
@@ -961,6 +1014,12 @@ table {
   left: 151px;
   width: calc(100% - 305px);
 }
+@media (max-width: 768px) {
+  .section footer:before {
+    width: calc(100% - 256px);
+    left: 110px;
+  }
+}
 .section footer p {
   margin-top: 10px;
   font-family: "Montserrat", sans-serif;
@@ -1038,6 +1097,11 @@ table {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 950px) {
+  .section-characters header nav ul li {
+    margin-right: 15px;
+  }
+}
 @media (max-width: 1024px) {
   .section-characters header nav {
     padding: 10px;
@@ -1091,13 +1155,20 @@ table {
 @media (max-width: 520px) {
   .section-characters header {
     background: #221a1a;
+    height: auto;
   }
   .section-characters header h1:after, .section-characters header h1:before {
     content: none;
   }
   .section-characters header .logo {
+    order: 2;
     width: 120px;
     height: 70px;
+  }
+  .section-characters header .burger {
+    order: 1;
+    width: 60px;
+    height: 40px;
   }
 }
 .section-characters .body-characters {

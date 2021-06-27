@@ -104,6 +104,10 @@
         line-height: 56px;
       }
     }
+
+    @media (max-width: 768px) {
+      margin: 20px 60px 0;
+    }
   }
 
   @import "../components/footer.scss";
