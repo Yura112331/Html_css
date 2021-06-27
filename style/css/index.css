@@ -230,6 +230,13 @@ table {
   background: url("../../image/1.jpg");
   background-size: cover;
 }
+@media (max-width: 768px) {
+  .section.general {
+    background: url("../../image/1.jpg") no-repeat;
+    background-size: auto 100%;
+    background-position-x: 70%;
+  }
+}
 .section header {
   display: flex;
   align-items: center;
@@ -250,19 +257,14 @@ table {
   width: 100%;
   padding-left: 32px;
 }
-@media (max-width: 768px) {
-  .section header nav {
-    padding: 10px;
-  }
-}
 .section header nav ul {
   position: relative;
   display: flex;
   padding-right: 32px;
 }
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .section header nav ul {
-    padding-right: 10px;
+    display: none;
   }
 }
 .section header nav ul::after {
@@ -274,13 +276,13 @@ table {
   border: 2px solid #feffd3;
   content: "";
 }
+@media (max-width: 660px) {
+  .section header nav ul::after {
+    content: none;
+  }
+}
 .section header nav ul li {
   margin-right: 50px;
-}
-@media (max-width: 768px) {
-  .section header nav ul li {
-    margin-right: 10px;
-  }
 }
 .section header nav ul li a {
   font-size: 16px;
@@ -290,6 +292,17 @@ table {
   line-height: 21px;
   text-decoration: none;
   color: white;
+}
+@media (max-width: 1024px) {
+  .section header nav {
+    padding: 10px;
+  }
+  .section header nav ul {
+    padding-right: 10px;
+  }
+  .section header nav li {
+    margin-right: 10px;
+  }
 }
 .section header h1 {
   position: relative;
@@ -325,12 +338,21 @@ table {
     padding: 10px 40px 10px 10px;
   }
 }
+@media (max-width: 590px) {
+  .section header h1:after, .section header h1:before {
+    content: none;
+  }
+}
 @media (max-width: 520px) {
   .section header {
-    background: #221A1A;
+    background: #221a1a;
   }
   .section header h1:after, .section header h1:before {
     content: none;
+  }
+  .section header .logo {
+    width: 120px;
+    height: 70px;
   }
 }
 .section .body-general {
@@ -349,6 +371,11 @@ table {
 @media (max-width: 768px) {
   .section .body-general .line-body:after {
     right: 40px;
+  }
+}
+@media (max-width: 520px) {
+  .section .body-general .line-body:after {
+    content: none;
   }
 }
 .section .body-general .text {
@@ -370,6 +397,12 @@ table {
   line-height: 84px;
   color: #feffd3;
 }
+@media (max-width: 768px) {
+  .section .body-general .text-name {
+    width: 100%;
+    height: auto;
+  }
+}
 .section .body-general .text-outline {
   margin-top: 53px;
   width: 395px;
@@ -381,6 +414,12 @@ table {
   line-height: 25px;
   letter-spacing: 0.02em;
   color: #b9bcc7;
+}
+@media (max-width: 768px) {
+  .section .body-general .text-outline {
+    width: 100%;
+    height: auto;
+  }
 }
 .section .body-general .button-left {
   margin-top: 44px;
@@ -408,6 +447,18 @@ table {
   line-height: 25px;
   border: none;
   color: #feffd3;
+}
+@media (max-width: 520px) {
+  .section .body-general {
+    margin: 50px 30px 30px;
+    padding-bottom: 50px;
+  }
+  .section .body-general .text-name {
+    width: 288px;
+    height: 168px;
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 .section footer {
   position: relative;
@@ -438,24 +489,21 @@ table {
   line-height: 21px;
   color: #feffd3;
 }
+@media (max-width: 520px) {
+  .section footer {
+    display: none;
+  }
+}
 
 .section.facts {
   background: url("../../image/facts/bg_facts.png");
-  background-size: 100% calc(100% + 94px);
-  background-position-y: -59px;
-}
-@media (max-width: 1024px) {
-  .section.facts {
-    background-position-y: -75px;
-    background-size: 100% 100%;
-  }
+  background-size: auto 100%;
 }
 @media (max-width: 768px) {
   .section.facts {
-    background-position-y: 0px;
-    background: url("../../image/1.jpg") no-repeat;
+    background: url("../../image/facts/bg_facts.png") no-repeat;
     background-size: auto 100%;
-    background-position-x: 70%;
+    background-position-x: 55%;
   }
 }
 .section header {
@@ -478,19 +526,14 @@ table {
   width: 100%;
   padding-left: 32px;
 }
-@media (max-width: 768px) {
-  .section header nav {
-    padding: 10px;
-  }
-}
 .section header nav ul {
   position: relative;
   display: flex;
   padding-right: 32px;
 }
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .section header nav ul {
-    padding-right: 10px;
+    display: none;
   }
 }
 .section header nav ul::after {
@@ -502,13 +545,13 @@ table {
   border: 2px solid #feffd3;
   content: "";
 }
+@media (max-width: 660px) {
+  .section header nav ul::after {
+    content: none;
+  }
+}
 .section header nav ul li {
   margin-right: 50px;
-}
-@media (max-width: 768px) {
-  .section header nav ul li {
-    margin-right: 10px;
-  }
 }
 .section header nav ul li a {
   font-size: 16px;
@@ -518,6 +561,17 @@ table {
   line-height: 21px;
   text-decoration: none;
   color: white;
+}
+@media (max-width: 1024px) {
+  .section header nav {
+    padding: 10px;
+  }
+  .section header nav ul {
+    padding-right: 10px;
+  }
+  .section header nav li {
+    margin-right: 10px;
+  }
 }
 .section header h1 {
   position: relative;
@@ -553,12 +607,21 @@ table {
     padding: 10px 40px 10px 10px;
   }
 }
+@media (max-width: 590px) {
+  .section header h1:after, .section header h1:before {
+    content: none;
+  }
+}
 @media (max-width: 520px) {
   .section header {
-    background: #221A1A;
+    background: #221a1a;
   }
   .section header h1:after, .section header h1:before {
     content: none;
+  }
+  .section header .logo {
+    width: 120px;
+    height: 70px;
   }
 }
 .section .body-facts {
@@ -644,6 +707,11 @@ table {
   line-height: 21px;
   color: #feffd3;
 }
+@media (max-width: 520px) {
+  .section footer {
+    display: none;
+  }
+}
 
 .section.episodes {
   background: url("../../image/episodes/bg_episodes.png");
@@ -669,19 +737,14 @@ table {
   width: 100%;
   padding-left: 32px;
 }
-@media (max-width: 768px) {
-  .section header nav {
-    padding: 10px;
-  }
-}
 .section header nav ul {
   position: relative;
   display: flex;
   padding-right: 32px;
 }
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .section header nav ul {
-    padding-right: 10px;
+    display: none;
   }
 }
 .section header nav ul::after {
@@ -693,13 +756,13 @@ table {
   border: 2px solid #feffd3;
   content: "";
 }
+@media (max-width: 660px) {
+  .section header nav ul::after {
+    content: none;
+  }
+}
 .section header nav ul li {
   margin-right: 50px;
-}
-@media (max-width: 768px) {
-  .section header nav ul li {
-    margin-right: 10px;
-  }
 }
 .section header nav ul li a {
   font-size: 16px;
@@ -709,6 +772,17 @@ table {
   line-height: 21px;
   text-decoration: none;
   color: white;
+}
+@media (max-width: 1024px) {
+  .section header nav {
+    padding: 10px;
+  }
+  .section header nav ul {
+    padding-right: 10px;
+  }
+  .section header nav li {
+    margin-right: 10px;
+  }
 }
 .section header h1 {
   position: relative;
@@ -744,12 +818,21 @@ table {
     padding: 10px 40px 10px 10px;
   }
 }
+@media (max-width: 590px) {
+  .section header h1:after, .section header h1:before {
+    content: none;
+  }
+}
 @media (max-width: 520px) {
   .section header {
-    background: #221A1A;
+    background: #221a1a;
   }
   .section header h1:after, .section header h1:before {
     content: none;
+  }
+  .section header .logo {
+    width: 120px;
+    height: 70px;
   }
 }
 .section .body-episodes {
@@ -757,6 +840,7 @@ table {
   max-width: 1240px;
 }
 .section .body-episodes .discription {
+  text-align: center;
   width: 419px;
   height: 62px;
   font-family: "Montserrat", sans-serif;
@@ -767,6 +851,11 @@ table {
   align-items: center;
   letter-spacing: 0.02em;
   color: #b9bcc7;
+}
+@media (max-width: 520px) {
+  .section .body-episodes .discription {
+    width: 100%;
+  }
 }
 .section .body-episodes .block-flex {
   display: flex;
@@ -841,6 +930,17 @@ table {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 520px) {
+  .section .body-episodes {
+    margin: 15px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section .body-episodes .block-flex {
+    justify-content: center;
+  }
+}
 .section footer {
   position: relative;
   display: flex;
@@ -870,6 +970,11 @@ table {
   line-height: 21px;
   color: #feffd3;
 }
+@media (max-width: 520px) {
+  .section footer {
+    display: none;
+  }
+}
 
 .section-characters {
   background: url("../../image/characters/bg_characters.png") no-repeat;
@@ -897,19 +1002,14 @@ table {
   width: 100%;
   padding-left: 32px;
 }
-@media (max-width: 768px) {
-  .section-characters header nav {
-    padding: 10px;
-  }
-}
 .section-characters header nav ul {
   position: relative;
   display: flex;
   padding-right: 32px;
 }
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .section-characters header nav ul {
-    padding-right: 10px;
+    display: none;
   }
 }
 .section-characters header nav ul::after {
@@ -921,13 +1021,13 @@ table {
   border: 2px solid #feffd3;
   content: "";
 }
+@media (max-width: 660px) {
+  .section-characters header nav ul::after {
+    content: none;
+  }
+}
 .section-characters header nav ul li {
   margin-right: 50px;
-}
-@media (max-width: 768px) {
-  .section-characters header nav ul li {
-    margin-right: 10px;
-  }
 }
 .section-characters header nav ul li a {
   font-size: 16px;
@@ -937,6 +1037,17 @@ table {
   line-height: 21px;
   text-decoration: none;
   color: white;
+}
+@media (max-width: 1024px) {
+  .section-characters header nav {
+    padding: 10px;
+  }
+  .section-characters header nav ul {
+    padding-right: 10px;
+  }
+  .section-characters header nav li {
+    margin-right: 10px;
+  }
 }
 .section-characters header h1 {
   position: relative;
@@ -972,12 +1083,21 @@ table {
     padding: 10px 40px 10px 10px;
   }
 }
+@media (max-width: 590px) {
+  .section-characters header h1:after, .section-characters header h1:before {
+    content: none;
+  }
+}
 @media (max-width: 520px) {
   .section-characters header {
-    background: #221A1A;
+    background: #221a1a;
   }
   .section-characters header h1:after, .section-characters header h1:before {
     content: none;
+  }
+  .section-characters header .logo {
+    width: 120px;
+    height: 70px;
   }
 }
 .section-characters .body-characters {

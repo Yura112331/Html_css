@@ -23,18 +23,13 @@ header {
     width: 100%;
     padding-left: 32px;
 
-    @media (max-width: 768px) {
-      padding: 10px;
-    }
-
-
     ul {
       position: relative;
       display: flex;
       padding-right: 32px;
 
-      @media (max-width: 768px) {
-        padding-right: 10px;
+      @media (max-width: 650px) {
+        display: none;
       }
 
       &::after {
@@ -45,18 +40,18 @@ header {
         opacity: 0.3;
         border: 2px solid $line-color;
         content: "";
+
+        @media (max-width: 660px) {
+          content: none;
+        }
       }
 
       li {
         margin-right: 50px;
 
-        @media (max-width: 768px) {
-          margin-right: 10px;
-        }
-
         a {
           font-size: 16px;
-          font-family: 'Montserrat', sans-serif;
+          font-family: "Montserrat", sans-serif;
           font-style: normal;
           font-weight: normal;
           line-height: 21px;
@@ -65,13 +60,25 @@ header {
         }
       }
     }
+
+    @media (max-width: 1024px) {
+      padding: 10px;
+
+      ul {
+        padding-right: 10px;
+      }
+
+      li {
+        margin-right: 10px;
+      }
+    }
   }
 
   h1 {
     position: relative;
     width: 100%;
     margin: 0 25px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 42px;
@@ -97,15 +104,29 @@ header {
     padding: 10px 40px 10px 10px;
   }
 
-  @media (max-width: 520px) {
-    background: #221A1A;
-    
+  @media (max-width: 590px) {
 
     h1 {
-
-      &:after, &:before {
+      &:after,
+      &:before {
         content: none;
       }
+    }
+  }
+
+  @media (max-width: 520px) {
+    background: #221a1a;
+
+    h1 {
+      &:after,
+      &:before {
+        content: none;
+      }
+    }
+
+    .logo {
+      width: 120px;
+      height: 70px;
     }
   }
 }

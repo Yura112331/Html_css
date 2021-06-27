@@ -29,4 +29,8 @@ footer {
     line-height: 21px;
     color: $line-color;
   }
+
+  @media (max-width: 520px) {
+    display: none;
+  }
 }
