@@ -27,8 +27,7 @@ footer {
 
   p {
     margin-top: 10px;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
+    @include Montserrat;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;

@@ -16,3 +16,18 @@
   border: none;
   color: $line-color;
 }
+
+@mixin Roboto {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+@mixin Montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}

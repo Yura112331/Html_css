@@ -33,13 +33,11 @@ header {
       }
 
       &::after {
-        position: relative;
+        @include line;
         top: 8px;
         height: 0px;
         width: 100%;
-        opacity: 0.3;
-        border: 2px solid $line-color;
-        content: "";
+        position: relative;
 
         @media (max-width: 660px) {
           content: none;
@@ -51,8 +49,7 @@ header {
 
         a {
           font-size: 16px;
-          font-family: "Montserrat", sans-serif;
-          font-style: normal;
+          @include Montserrat;
           font-weight: normal;
           line-height: 21px;
           text-decoration: none;
@@ -83,7 +80,7 @@ header {
     position: relative;
     width: 100%;
     margin: 0 25px;
-    font-family: "Roboto", sans-serif;
+    @include Roboto;
     font-weight: 500;
     font-size: 36px;
     line-height: 42px;
