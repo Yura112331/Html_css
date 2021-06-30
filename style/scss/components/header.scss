@@ -59,7 +59,6 @@ header {
         @media (max-width: 950px) {
           margin-right: 15px;
         }
-  
       }
     }
 
@@ -107,7 +106,6 @@ header {
   }
 
   @media (max-width: 590px) {
-
     h1 {
       &:after,
       &:before {
@@ -117,26 +115,32 @@ header {
   }
 
   @media (max-width: 520px) {
-    background: #221a1a;
     height: auto;
+    background-color: #221a1a;
+
+    .burger {
+      order: 3;
+      width: 60px;
+      height: 40px;
+    }
+
+    .logo {
+      order: 1;
+      min-width: 85px;
+      background-image: url("../../../image/media_logo.png");
+    }
 
     h1 {
+      order: 2;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+      
       &:after,
       &:before {
         content: none;
       }
-    }
-
-    .logo {
-      order: 2;
-      width: 120px;
-      height: 70px;
-    }
-
-    .burger {
-      order: 1;
-      width: 60px;
-      height: 40px;
     }
   }
 }

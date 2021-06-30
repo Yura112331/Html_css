@@ -352,21 +352,28 @@ table {
 }
 @media (max-width: 520px) {
   .section header {
-    background: #221a1a;
     height: auto;
+    background-color: #221a1a;
+  }
+  .section header .burger {
+    order: 3;
+    width: 60px;
+    height: 40px;
+  }
+  .section header .logo {
+    order: 1;
+    min-width: 85px;
+    background-image: url("../../../image/media_logo.png");
+  }
+  .section header h1 {
+    order: 2;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
   }
   .section header h1:after, .section header h1:before {
     content: none;
-  }
-  .section header .logo {
-    order: 2;
-    width: 120px;
-    height: 70px;
-  }
-  .section header .burger {
-    order: 1;
-    width: 60px;
-    height: 40px;
   }
 }
 .section .body-general {
@@ -501,8 +508,8 @@ table {
 }
 @media (max-width: 768px) {
   .section footer:before {
-    width: calc(100% - 256px);
-    left: 110px;
+    width: calc(100% - 285px);
+    left: 143px;
   }
 }
 .section footer p {
@@ -646,21 +653,28 @@ table {
 }
 @media (max-width: 520px) {
   .section header {
-    background: #221a1a;
     height: auto;
+    background-color: #221a1a;
+  }
+  .section header .burger {
+    order: 3;
+    width: 60px;
+    height: 40px;
+  }
+  .section header .logo {
+    order: 1;
+    min-width: 85px;
+    background-image: url("../../../image/media_logo.png");
+  }
+  .section header h1 {
+    order: 2;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
   }
   .section header h1:after, .section header h1:before {
     content: none;
-  }
-  .section header .logo {
-    order: 2;
-    width: 120px;
-    height: 70px;
-  }
-  .section header .burger {
-    order: 1;
-    width: 60px;
-    height: 40px;
   }
 }
 .section .body-facts {
@@ -739,8 +753,8 @@ table {
 }
 @media (max-width: 768px) {
   .section footer:before {
-    width: calc(100% - 256px);
-    left: 110px;
+    width: calc(100% - 285px);
+    left: 143px;
   }
 }
 .section footer p {
@@ -877,21 +891,28 @@ table {
 }
 @media (max-width: 520px) {
   .section header {
-    background: #221a1a;
     height: auto;
+    background-color: #221a1a;
+  }
+  .section header .burger {
+    order: 3;
+    width: 60px;
+    height: 40px;
+  }
+  .section header .logo {
+    order: 1;
+    min-width: 85px;
+    background-image: url("../../../image/media_logo.png");
+  }
+  .section header h1 {
+    order: 2;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
   }
   .section header h1:after, .section header h1:before {
     content: none;
-  }
-  .section header .logo {
-    order: 2;
-    width: 120px;
-    height: 70px;
-  }
-  .section header .burger {
-    order: 1;
-    width: 60px;
-    height: 40px;
   }
 }
 .section .body-episodes {
@@ -1022,8 +1043,8 @@ table {
 }
 @media (max-width: 768px) {
   .section footer:before {
-    width: calc(100% - 256px);
-    left: 110px;
+    width: calc(100% - 285px);
+    left: 143px;
   }
 }
 .section footer p {
@@ -1160,21 +1181,28 @@ table {
 }
 @media (max-width: 520px) {
   .section.characters header {
-    background: #221a1a;
     height: auto;
+    background-color: #221a1a;
+  }
+  .section.characters header .burger {
+    order: 3;
+    width: 60px;
+    height: 40px;
+  }
+  .section.characters header .logo {
+    order: 1;
+    min-width: 85px;
+    background-image: url("../../../image/media_logo.png");
+  }
+  .section.characters header h1 {
+    order: 2;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
   }
   .section.characters header h1:after, .section.characters header h1:before {
     content: none;
-  }
-  .section.characters header .logo {
-    order: 2;
-    width: 120px;
-    height: 70px;
-  }
-  .section.characters header .burger {
-    order: 1;
-    width: 60px;
-    height: 40px;
   }
 }
 .section.characters .body-characters {
