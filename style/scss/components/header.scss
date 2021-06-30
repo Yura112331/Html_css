@@ -8,8 +8,10 @@ header {
   padding: 42px 80px 18px;
 
   .logo {
-    width: 200px;
+    min-width: 200px;
     height: 56px;
+    background-image: url("../../image/logo.svg");
+    background-repeat: no-repeat;
     cursor: pointer;
   }
 
@@ -17,6 +19,10 @@ header {
     width: 79px;
     height: 51px;
     cursor: pointer;
+  }
+
+  .media-vector {
+    display: none;
   }
 
   nav {
@@ -29,7 +35,9 @@ header {
       padding-right: 32px;
 
       @media (max-width: 650px) {
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 0px;
       }
 
       &::after {
@@ -73,6 +81,11 @@ header {
         margin-right: 10px;
       }
     }
+    @media (max-width: 650px) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0px;
+    }
   }
 
   h1 {
@@ -115,32 +128,42 @@ header {
   }
 
   @media (max-width: 520px) {
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: auto;
     background-color: #221a1a;
 
     .burger {
-      order: 3;
-      width: 60px;
+      order: 1;
+      max-width: 60px;
       height: 40px;
+    }
+    
+    nav {
+      display: none;
     }
 
     .logo {
-      order: 1;
+      order: 2;
       min-width: 85px;
-      background-image: url("../../../image/media_logo.png");
+      background-image: url("../../image/logo_mobile.svg");
     }
 
     h1 {
-      order: 2;
+      order: 3;
       width: 100%;
       padding: 0;
       margin: 0;
       text-align: left;
-      
       &:after,
       &:before {
         content: none;
       }
+    }
+
+    .media-vector {
+      order: 2;
+      display: inline;
     }
   }
 }
