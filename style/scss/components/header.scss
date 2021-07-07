@@ -34,12 +34,6 @@ header {
       display: flex;
       padding-right: 32px;
 
-      @media (max-width: 650px) {
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 0px;
-      }
-
       &::after {
         @include line;
         top: 8px;
@@ -138,7 +132,7 @@ header {
       max-width: 60px;
       height: 40px;
     }
-    
+
     nav {
       display: none;
     }
@@ -163,7 +157,17 @@ header {
 
     .media-vector {
       order: 2;
-      display: inline;
+      display: block;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 0px;
+      }
     }
   }
 }

@@ -267,13 +267,6 @@ table {
   display: flex;
   padding-right: 32px;
 }
-@media (max-width: 650px) {
-  .section header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 0px;
-  }
-}
 .section header nav ul::after {
   content: "";
   position: absolute;
@@ -396,7 +389,14 @@ table {
   }
   .section header .media-vector {
     order: 2;
-    display: inline;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .section header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0px;
   }
 }
 .section .body-general {
@@ -591,13 +591,6 @@ table {
   display: flex;
   padding-right: 32px;
 }
-@media (max-width: 650px) {
-  .section header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 0px;
-  }
-}
 .section header nav ul::after {
   content: "";
   position: absolute;
@@ -720,7 +713,14 @@ table {
   }
   .section header .media-vector {
     order: 2;
-    display: inline;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .section header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0px;
   }
 }
 .section .body-facts {
@@ -852,13 +852,6 @@ table {
   display: flex;
   padding-right: 32px;
 }
-@media (max-width: 650px) {
-  .section header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 0px;
-  }
-}
 .section header nav ul::after {
   content: "";
   position: absolute;
@@ -981,7 +974,14 @@ table {
   }
   .section header .media-vector {
     order: 2;
-    display: inline;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .section header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0px;
   }
 }
 .section .body-episodes {
@@ -1165,13 +1165,6 @@ table {
   display: flex;
   padding-right: 32px;
 }
-@media (max-width: 650px) {
-  .section.characters header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 0px;
-  }
-}
 .section.characters header nav ul::after {
   content: "";
   position: absolute;
@@ -1294,7 +1287,14 @@ table {
   }
   .section.characters header .media-vector {
     order: 2;
-    display: inline;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .section.characters header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0px;
   }
 }
 .section.characters .body-characters {
